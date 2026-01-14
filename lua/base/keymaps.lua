@@ -3,16 +3,6 @@
 -- ------------------------------
 vim.g.mapleader = " " -- Set Space as the leader key
 
--- netrw-specific mappings (only inside netrw buffers)
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "netrw",
-  callback = function()
-    local opts = { buffer = true, silent = true }
-    vim.keymap.set("n", "<leader>-", "%", opts) -- Create file (netrw)
-    vim.keymap.set("n", "<leader>=", "d", opts) -- Create directory (netrw)
-  end,
-})
-
 vim.keymap.set("n", "<leader>ee", vim.cmd.Ex)          -- Open netrw (file explorer)
 vim.keymap.set("n", "<leader>,,", "<C-^>")             -- Jump to alternate file (previous buffer)
 
