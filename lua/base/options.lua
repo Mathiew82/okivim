@@ -18,3 +18,10 @@ vim.opt.termguicolors = true      -- Activa colores 24 bits
 vim.opt.scrolloff = 8             -- Mantiene 8 líneas visibles al mover cursor
 vim.opt.signcolumn = "yes"        -- Columna fija para diagnósticos
 
+vim.opt.foldmethod = "syntax"     -- Create folds based on syntax highlighting
+vim.opt.foldlevelstart = 99       -- Start with all folds open
+-- Folding:
+--   za = toggle fold under cursor
+--   zR = open all folds
+--   zM = close all folds
+
