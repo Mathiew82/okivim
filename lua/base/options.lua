@@ -25,3 +25,5 @@ vim.opt.foldlevelstart = 99       -- Start with all folds open
 --   zR = open all folds
 --   zM = close all folds
 
+vim.opt.path:append("**")
+vim.opt.suffixesadd:append({ ".ts", ".tsx", ".js", ".jsx", ".json", ".mjs", ".cjs" })
