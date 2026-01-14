@@ -1,0 +1,3 @@
+Neovim with this config:
+
+:noh (clear search highlight)
