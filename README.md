@@ -99,6 +99,16 @@ sudo apt install xclip
 
 ------------------------------------------------------------------------
 
+### 6. Prettier
+
+Required for projects that use it.
+
+``` bash
+npm install -g prettier
+```
+
+------------------------------------------------------------------------
+
 ## Plugin manager
 
 -   **lazy.nvim**
