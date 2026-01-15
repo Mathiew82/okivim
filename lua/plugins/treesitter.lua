@@ -3,31 +3,28 @@ return {
   lazy = false,
   build = ":TSUpdate",
   config = function()
-    local treesitter = require("nvim-treesitter")
+    local parser_dir = vim.fn.stdpath("data") .. "/ts-parsers"
 
-    local languages = {
-      "lua",
-      "javascript",
-      "typescript",
-      "tsx",
-      "vue",
-      "json",
-      "yaml",
-      "bash",
-      "html",
-      "css",
-      "toml",
-      "rust",
-    }
+    vim.opt.rtp:prepend(parser_dir)
 
-    treesitter.setup()
-    treesitter.install(languages)
+    require("nvim-treesitter").setup({
+      install_dir = parser_dir,
+    })
+
+    require("nvim-treesitter").install({
+      "lua", "html", "css", "scss",
+      "javascript", "typescript", "tsx",
+      "vue", "yaml", "bash", "json", "toml",
+      "python", "rust",
+    })
 
     vim.api.nvim_create_autocmd("FileType", {
-      pattern = languages,
+      pattern = {
+        "vue", "html", "css", "scss", "javascript", "typescript", "tsx",
+        "lua", "json", "yaml", "bash", "toml", "python", "rust",
+      },
       callback = function()
-        vim.treesitter.start()
-        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        pcall(vim.treesitter.start)
       end,
     })
   end,
