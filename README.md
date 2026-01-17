@@ -282,6 +282,9 @@ Used to manage all plugins and allow easy setup on new machines.
 - **Comment.nvim**
   https://github.com/numToStr/Comment.nvim
 
+- **nvim-autopairs**
+  https://github.com/windwp/nvim-autopairs
+
 ### Navigation
 - **flash.nvim**
   https://github.com/folke/flash.nvim
