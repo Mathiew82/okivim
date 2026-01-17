@@ -253,17 +253,20 @@ Used to manage all plugins and allow easy setup on new machines.
 - **nvim-treesitter**
   https://github.com/nvim-treesitter/nvim-treesitter
 
-### Git
-- **gitsigns.nvim**
-  https://github.com/lewis6991/gitsigns.nvim
+- **nvim-colorizer.lua**
+  https://github.com/norcalli/nvim-colorizer.lua
+
+### File Explorer
+- **oil.nvim**
+  https://github.com/stevearc/oil.nvim
 
 ### Search and navigation
 - **telescope.nvim**
   https://github.com/nvim-telescope/telescope.nvim
 
-### File Explorer
-- **oil.nvim**
-  https://github.com/stevearc/oil.nvim
+### Git
+- **gitsigns.nvim**
+  https://github.com/lewis6991/gitsigns.nvim
 
 ### Interface
 - **lualine.nvim** (status line)
@@ -279,3 +282,6 @@ Used to manage all plugins and allow easy setup on new machines.
 - **Comment.nvim**
   https://github.com/numToStr/Comment.nvim
 
+### Navigation
+- **flash.nvim**
+  https://github.com/folke/flash.nvim
