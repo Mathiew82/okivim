@@ -3,7 +3,7 @@
 This configuration is built from scratch, focused on speed, clarity and
 full control over plugins and features.
 
-## System dependencies
+## Dependencies
 
 These tools must be installed for the setup to work properly.
 
@@ -11,16 +11,26 @@ These tools must be installed for the setup to work properly.
 
 Required for the TypeScript LSP.
 
-Using **fnm** (Node version manager):\
+Using **fnm** (Node version manager)
 https://github.com/Schniz/fnm
 
 ``` bash
 fnm install --lts
 ```
 
-------------------------------------------------------------------------
+---
 
-### 2. TypeScript
+### 2. Prettier
+
+Required for projects that use it.
+
+``` bash
+npm install -g prettier
+```
+
+---
+
+### 3. TypeScript
 
 Required for TypeScript language server.
 
@@ -28,49 +38,79 @@ Required for TypeScript language server.
 npm install -g typescript typescript-language-server
 ```
 
-------------------------------------------------------------------------
+---
 
-### 3. Ripgrep
+### 5. Ripgrep (Telescope dependency)
 
 Used by Telescope for project-wide text search.
 
+**Linux**
 ``` bash
-# Linux
 sudo apt install ripgrep
-# macOS
+```
+**macOS**
+``` bash
 brew install ripgrep
-# Windows
+```
+**Windows**
+``` bash
 scoop install ripgrep
 or
 choco install ripgrep
 ```
 
-------------------------------------------------------------------------
+---
 
-### 4. fd
+### 6. fd (Telescope dependency)
 
 Used by Telescope for fast file search.
 
+**Linux**
 ``` bash
-# Linux
 sudo apt install fd-find
-# macOS
+```
+**macOS**
+``` bash
 brew install fd
-# Windows
+```
+**Windows**
+``` bash
 scoop install fd
 or
 choco install fd
 ```
 
-(Optional symlink)
+---
+
+*If you want create a symlink (Optional)*
 
 ``` bash
 ln -s $(which fdfind) ~/.local/bin/fd
 ```
 
-------------------------------------------------------------------------
+---
 
-### 5. Clipboard support
+### 7. nvim-treesitter (dependencies)
+
+**1- Required nvim-treesitter-cli:**
+
+With npm
+``` bash
+npm install -g tree-sitter-cli
+```
+With cargo
+``` bash
+cargo install --locked tree-sitter-cli
+```
+
+*And after check it*
+``` bash
+tree-sitter --version
+```
+
+---
+
+### 8. Clipboard support
 
 Neovim requires an external tool to integrate with the system clipboard.
 
@@ -85,83 +125,63 @@ echo $XDG_SESSION_TYPE
 - If it returns `wayland` - you are using Wayland
 - If it returns `x11` - you are using X11
 
-Wayland (wl-clipboard)
-
+**For Wayland (wl-clipboard)**
 ```bash
 sudo apt install wl-clipboard
 ```
 
-X11 (xclip)
-
+**Fow X11 (xclip)**
 ```bash
 sudo apt install xclip
 ```
 
-------------------------------------------------------------------------
+---
 
-### 6. Prettier
-
-Required for projects that use it.
-
-``` bash
-npm install -g prettier
-```
-
-------------------------------------------------------------------------
-
-### 6. nvim-treesitter (dependencies)
-
-1- Required nvim-treesitter-cli:
-
-``` bash
-# with npm
-npm install -g tree-sitter-cli
-# with cargo
-cargo install --locked tree-sitter-cli
-```
-
-And after check it
-
-``` bash
-tree-sitter --version
-```
-
-2- Required a C compiler:
+**2- Required a C compiler:**
 
 Check if CC is installed
-
 ``` bash
 cc --version
 ```
 
-Install on Linux
+---
 
+**Install on Linux**
+
+Ubuntu / Debian
 ``` bash
-# Ubuntu / Debian
 sudo apt install build-essential
-# Arch
+```
+Arch
+``` bash
 sudo pacman -S base-devel
-# Fedora
+```
+Fedora
+``` bash
 sudo dnf groupinstall "Development Tools"
 ```
 
-Install on macOS
-
+macOS
 ``` bash
 xcode-select --install
 ```
 
-Install on Windows
+---
 
+**Install on Windows**
+
+By download link (✔ Select Desktop development with C++)
 ``` bash
-# By download link (✔ Select Desktop development with C++)
 https://visualstudio.microsoft.com/es/downloads/
-# Git Bash / MSYS2 / WSL
+```
+Git Bash / MSYS2 / WSL
+``` bash
 sudo dnf groupinstall "Development Tools"
 ```
 
-Final check if tree-sitter-cli and C compiler is installed
+---
 
+Final check if tree-sitter-cli and C compiler is installed
 ``` bash
 cc --version
 ```
@@ -169,7 +189,37 @@ cc --version
 tree-sitter --version
 ```
 
-------------------------------------------------------------------------
+---
+
+## Language servers (managed by Mason)
+
+These LSPs are automatically installed and enabled:
+
+ - lua_ls
+ - pyright
+ - vtsls
+ - vue_ls
+ - cssls
+ - eslint
+ - rust_analyzer
+ - docker_compose_language_service
+ - tailwindcss
+ - taplo
+ - bashls
+ - jsonls
+ - yamlls
+ - phpactor
+
+---
+
+## Install everything on a new machine
+
+After cloning the config:
+``` vim
+:Lazy sync
+```
+
+---
 
 ## Plugin manager
 
@@ -177,61 +227,19 @@ tree-sitter --version
 
 Used to manage all plugins and allow easy setup on new machines.
 
-------------------------------------------------------------------------
+---
 
-## Installed plugins
+## Installed Plugins
 
--   lazy.nvim
--   telescope.nvim
--   plenary.nvim
--   catppuccin (colorscheme)
--   mason.nvim
--   mason-lspconfig.nvim
--   nvim-lspconfig
-
-------------------------------------------------------------------------
-
-## Language servers (managed by Mason)
-
-These LSPs are automatically installed and enabled:
-
--   lua_ls
--   pyright
--   ts_ls (TypeScript)
--   bashls
--   jsonls
--   yamlls
-
-------------------------------------------------------------------------
-
-## Install everything on a new machine
-
-After cloning the config:
-
-``` vim
-:Lazy sync
-```
-
-------------------------------------------------------------------------
-
-This README will be extended as more tools and plugins are added.
-
-
-## 🧩 Plugins Neovim
-
-### 🎨 Tema
+### Theme
 - **catppuccin.nvim**  
   https://github.com/catppuccin/nvim
 
----
-
-### 🧠 Autocompletado
+### Autocomplete
 - **nvim-cmp**  
   https://github.com/hrsh7th/nvim-cmp
 
----
-
-### 🛠 LSP y herramientas
+### LSP and Tools
 - **nvim-lspconfig** (Configuración LSP)  
   https://github.com/neovim/nvim-lspconfig
 
@@ -241,33 +249,23 @@ This README will be extended as more tools and plugins are added.
 - **conform.nvim** (Formatter)  
   https://github.com/stevearc/conform.nvim
 
----
-
-### 🌈 Coloreado y sintaxis
+### Coloring and syntax
 - **nvim-treesitter**  
   https://github.com/nvim-treesitter/nvim-treesitter
 
----
-
-### 🌿 Git
+### Git
 - **gitsigns.nvim**  
   https://github.com/lewis6991/gitsigns.nvim
 
----
-
-### 🔍 Búsqueda y navegación
+### Search and navigation
 - **telescope.nvim**  
   https://github.com/nvim-telescope/telescope.nvim
 
----
-
-### 🗂 Explorador de archivos
+### File Explorer
 - **oil.nvim**  
   https://github.com/stevearc/oil.nvim
 
----
-
-### 🧩 Interfaz
+### Interface
 - **lualine.nvim** (Statusline)  
   https://github.com/nvim-lualine/lualine.nvim
 
@@ -277,9 +275,7 @@ This README will be extended as more tools and plugins are added.
 - **mini.starter** (Pantalla de inicio)  
   https://github.com/echasnovski/mini.nvim
 
----
-
-### ✍️ Edición
+### Edition
 - **Comment.nvim**  
   https://github.com/numToStr/Comment.nvim
 
