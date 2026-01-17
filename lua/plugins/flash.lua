@@ -4,7 +4,6 @@ return {
     event = "VeryLazy",
     config = function()
       local flash = require("flash")
-
       -- Keymaps
       vim.keymap.set({ "n", "x", "o" }, "zk", flash.jump, { desc = "Flash jump" })
       vim.keymap.set({ "n", "x", "o" }, "Zk", flash.treesitter, { desc = "Flash Treesitter" })
