@@ -46,7 +46,7 @@ npm install -g typescript typescript-language-server
 
 ---
 
-### 5. Ripgrep (Telescope dependency)
+### 4. Ripgrep (Telescope dependency)
 
 Used by Telescope for project-wide text search.
 
@@ -67,7 +67,7 @@ choco install ripgrep
 
 ---
 
-### 6. fd (Telescope dependency)
+### 5. fd (Telescope dependency)
 
 Used by Telescope for fast file search.
 
@@ -96,7 +96,7 @@ ln -s $(which fdfind) ~/.local/bin/fd
 
 ---
 
-### 7. nvim-treesitter (dependencies)
+### 6. nvim-treesitter (dependencies)
 
 **1- Required nvim-treesitter-cli:**
 
@@ -170,7 +170,7 @@ tree-sitter --version
 
 ---
 
-### 8. Clipboard support
+### 7. Clipboard support
 
 Neovim requires an external tool to integrate with the system clipboard.
 
