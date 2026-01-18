@@ -15,8 +15,8 @@ These tools must be installed for the setup to work properly.
 
 Required for the TypeScript LSP.
 
-Using **fnm** (Node version manager)
-https://github.com/Schniz/fnm
+Using **fnm** *(Node version manager)*
+https://github.com/Schniz/fnm *(You can use another method to install Node)*
 
 ``` bash
 fnm install --lts
