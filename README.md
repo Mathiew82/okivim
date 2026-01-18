@@ -285,6 +285,9 @@ Used to manage all plugins and allow easy setup on new machines.
 - **nvim-autopairs**
   https://github.com/windwp/nvim-autopairs
 
+- **mini.surround**
+  https://github.com/nvim-mini/mini.surround
+
 ### Navigation
 - **flash.nvim**
   https://github.com/folke/flash.nvim
