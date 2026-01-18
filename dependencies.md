@@ -75,8 +75,6 @@ or
 choco install fd
 ```
 
----
-
 *If you want create a symlink (Optional)*
 
 ``` bash
