@@ -11,15 +11,15 @@ full control over plugins and features.
 
 ---
 
-## Installation
-
-[See instructions](./installation.md)
-
----
-
 ## Dependencies
 
 [See instructions](./dependencies.md)
+
+---
+
+## Installation
+
+[See instructions](./installation.md)
 
 ---
 
