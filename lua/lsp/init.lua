@@ -1,3 +1,4 @@
+-- Servers
 local servers = {
   "lua_ls",
   "pyright",
@@ -15,24 +16,21 @@ local servers = {
   "phpactor",
 }
 
--- Keymaps when LSP is attached
+-- Keymaps
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("UserLspKeymaps", { clear = true }),
   callback = function(ev)
     local opts = { buffer = ev.buf, silent = true }
 
-    -- Navegation
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
     vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
     vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
 
-    -- Actions
     vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
     vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
 
-    -- Diagnostics
     vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
     vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
     vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, opts)
@@ -41,33 +39,52 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 -- Capabilities
 local ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-local capabilities = ok
-    and cmp_nvim_lsp.default_capabilities()
-    or vim.lsp.protocol.make_client_capabilities()
+local capabilities = vim.lsp.protocol.make_client_capabilities()
 
--- Configuration for server
+if ok then
+  capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
+end
+
+capabilities.textDocument.completion.completionItem.resolveSupport = {
+  properties = { "documentation", "detail", "additionalTextEdits" },
+}
+capabilities.textDocument.completion.completionItem.documentationFormat = {
+  "markdown",
+  "plaintext",
+}
+
+local base_config = {
+  capabilities = capabilities,
+}
+
+-- simple servers
+local simple_servers = {
+  "pyright",
+  "eslint",
+  "bashls",
+  "jsonls",
+  "yamlls",
+}
+
+for _, server in ipairs(simple_servers) do
+  vim.lsp.config(server, base_config)
+end
+
+-- helpers
+local function mason_bin(exe)
+  local bin = vim.fn.stdpath("data") .. "/mason/bin/"
+  return vim.fn.has("win32") == 1 and bin .. exe .. ".cmd" or bin .. exe
+end
+
+-- lua
 vim.lsp.config("lua_ls", {
   capabilities = capabilities,
   settings = {
-    Lua = {
-      diagnostics = { globals = { "vim" } },
-    },
+    Lua = { diagnostics = { globals = { "vim" } } },
   },
 })
 
-vim.lsp.config("pyright", {
-  capabilities = capabilities,
-})
-
-local function mason_bin(exe)
-  local bin_dir = vim.fn.stdpath("data") .. "/mason/bin/"
-  local is_win = vim.fn.has("win32") == 1
-  if is_win then
-    return bin_dir .. exe .. ".cmd"
-  end
-  return bin_dir .. exe
-end
-
+-- vtsls
 local vue_plugin = {
   name = "@vue/typescript-plugin",
   location = vim.fn.stdpath("data")
@@ -81,90 +98,95 @@ vim.lsp.config("vtsls", {
   init_options = { hostInfo = "neovim" },
   settings = {
     vtsls = {
-      tsserver = {
-        globalPlugins = { vue_plugin },
-      },
+      tsserver = { globalPlugins = { vue_plugin } },
     },
   },
   filetypes = { "typescript", "javascript", "vue" },
   capabilities = capabilities,
 })
 
+-- vue
 vim.lsp.config("vue_ls", {
   cmd = { "vue-language-server", "--stdio" },
   filetypes = { "vue" },
   capabilities = capabilities,
 })
 
-local cssls_capabilities = vim.lsp.protocol.make_client_capabilities()
-cssls_capabilities.textDocument.completion.completionItem.snippetSupport = true
-vim.lsp.config('cssls', {
-  capabilities = cssls_capabilities,
+-- css
+local css_caps = vim.tbl_deep_extend("force", {}, capabilities)
+css_caps.textDocument.completion.completionItem.snippetSupport = true
+
+vim.lsp.config("cssls", {
+  capabilities = css_caps,
 })
 
-vim.lsp.config("eslint", {
-  capabilities = capabilities,
-})
-
-vim.lsp.config('rust_analyzer', {
+-- rust
+vim.lsp.config("rust_analyzer", {
   cmd = { "rust-analyzer" },
-  capabilities = {
+  capabilities = vim.tbl_deep_extend("force", {}, capabilities, {
     experimental = {
       commands = {
-        commands = { "rust-analyzer.showReferences", "rust-analyzer.runSingle", "rust-analyzer.debugSingle" }
+        commands = {
+          "rust-analyzer.showReferences",
+          "rust-analyzer.runSingle",
+          "rust-analyzer.debugSingle",
+        },
       },
-      serverStatusNotification = true
-    }
-  },
+      serverStatusNotification = true,
+    },
+  }),
   filetypes = { "rust" },
   settings = {
-    ['rust-analyzer'] = {
-      diagnostics = {
-        enable = false,
-      }
-    }
-  }
+    ["rust-analyzer"] = { diagnostics = { enable = false } },
+  },
 })
 
+-- docker
 vim.lsp.config("docker_compose_language_service", {
   cmd = { "docker-compose-langserver", "--stdio" },
   capabilities = capabilities,
   filetypes = { "yaml.docker-compose" },
 })
 
-vim.lsp.config("tailwindcss", {
-  cmd = { "tailwindcss-language-server", "--stdio" },
-  capabilities = {
-    workspace = {
-      didChangeWatchedFiles = {
-        dynamicRegistration = true
-      }
-    }
+-- tailwind
+local tailwind_filetypes = {
+  "astro",
+  "handlebars",
+  "html",
+  "htmlangular",
+  "mustache",
+  "php",
+  "twig",
+  "css",
+  "less",
+  "postcss",
+  "sass",
+  "scss",
+  "stylus",
+  "javascriptreact",
+  "typescriptreact",
+  "vue",
+  "svelte",
+}
+local tailwind_capabilities = vim.tbl_deep_extend("force", {}, capabilities, {
+  workspace = {
+    didChangeWatchedFiles = { dynamicRegistration = true },
   },
-  filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "clojure", "django-html", "htmldjango", "edge", "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "gohtmltmpl", "haml", "handlebars", "hbs", "html", "htmlangular", "html-eex", "heex", "jade", "leaf", "liquid", "markdown", "mdx", "mustache", "njk", "nunjucks", "php", "razor", "slim", "twig", "css", "less", "postcss", "sass", "scss", "stylus", "sugarss", "javascript", "javascriptreact", "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte", "templ" },
 })
 
+vim.lsp.config("tailwindcss", {
+  cmd = { "tailwindcss-language-server", "--stdio" },
+  capabilities = tailwind_capabilities,
+  filetypes = tailwind_filetypes,
+})
+
+-- taplo
 vim.lsp.config("taplo", {
   cmd = { "taplo", "lsp", "stdio" },
   capabilities = capabilities,
-  filetypes = { "toml" }
+  filetypes = { "toml" },
 })
 
-vim.lsp.config("bashls", {
-  capabilities = capabilities,
-})
-
-vim.lsp.config("jsonls", {
-  capabilities = capabilities,
-})
-
-vim.lsp.config("yamlls", {
-  capabilities = capabilities,
-})
-
--- Activate LSPs
 vim.lsp.enable(servers)
 
-return {
-  servers = servers,
-}
+return { servers = servers }

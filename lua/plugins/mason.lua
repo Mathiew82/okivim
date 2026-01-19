@@ -7,7 +7,6 @@ return {
       require("mason").setup()
     end,
   },
-  -- Mason <-> lspconfig + auto-install servers
   {
     "mason-org/mason-lspconfig.nvim",
     dependencies = {
