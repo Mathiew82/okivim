@@ -5,7 +5,7 @@
 
 > [!WARNING]  
 > In progress...
-> You can use this configuration; it's stable. However, the details listed below still need to be added.
+> You can use this configuration; it's stable. However, the following still needs to be added.
 
 ### Pending
 - ⬜ DAP Adapter
