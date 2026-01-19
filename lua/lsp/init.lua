@@ -1,5 +1,7 @@
+local M = {}
+
 -- Servers
-local servers = {
+M.servers = {
   "lua_ls",
   "pyright",
   "vtsls",
@@ -53,140 +55,36 @@ capabilities.textDocument.completion.completionItem.documentationFormat = {
   "plaintext",
 }
 
-local base_config = {
-  capabilities = capabilities,
-}
+M.capabilities = capabilities
 
--- simple servers
-local simple_servers = {
-  "pyright",
-  "eslint",
-  "bashls",
-  "jsonls",
-  "yamlls",
-}
+local function load_servers(capabilities_param)
+  local files = vim.fs.find(function(name)
+    return name:match("%.lua$") ~= nil
+  end, {
+    path = vim.fn.stdpath("config") .. "/lua/lsp/servers",
+    type = "file",
+  })
 
-for _, server in ipairs(simple_servers) do
-  vim.lsp.config(server, base_config)
+  table.sort(files)
+
+  for _, file in ipairs(files) do
+    local mod = file
+        :gsub("^" .. vim.pesc(vim.fn.stdpath("config") .. "/lua/"), "")
+        :gsub("%.lua$", "")
+        :gsub("/", ".")
+
+    local okey, setup = pcall(require, mod)
+    if okey and type(setup) == "function" then
+      setup(capabilities_param)
+    else
+      vim.notify(("LSP server module failed: %s"):format(mod), vim.log.levels.WARN)
+    end
+  end
 end
 
--- helpers
-local function mason_bin(exe)
-  local bin = vim.fn.stdpath("data") .. "/mason/bin/"
-  return vim.fn.has("win32") == 1 and bin .. exe .. ".cmd" or bin .. exe
-end
+-- Load servers
+load_servers(capabilities)
 
--- lua
-vim.lsp.config("lua_ls", {
-  capabilities = capabilities,
-  settings = {
-    Lua = { diagnostics = { globals = { "vim" } } },
-  },
-})
+vim.lsp.enable(M.servers)
 
--- vtsls
-local vue_plugin = {
-  name = "@vue/typescript-plugin",
-  location = vim.fn.stdpath("data")
-      .. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
-  languages = { "vue" },
-  configNamespace = "typescript",
-}
-
-vim.lsp.config("vtsls", {
-  cmd = { mason_bin("vtsls"), "--stdio" },
-  init_options = { hostInfo = "neovim" },
-  settings = {
-    vtsls = {
-      tsserver = { globalPlugins = { vue_plugin } },
-    },
-  },
-  filetypes = { "typescript", "javascript", "vue" },
-  capabilities = capabilities,
-})
-
--- vue
-vim.lsp.config("vue_ls", {
-  cmd = { "vue-language-server", "--stdio" },
-  filetypes = { "vue" },
-  capabilities = capabilities,
-})
-
--- css
-local css_caps = vim.tbl_deep_extend("force", {}, capabilities)
-css_caps.textDocument.completion.completionItem.snippetSupport = true
-
-vim.lsp.config("cssls", {
-  capabilities = css_caps,
-})
-
--- rust
-vim.lsp.config("rust_analyzer", {
-  cmd = { "rust-analyzer" },
-  capabilities = vim.tbl_deep_extend("force", {}, capabilities, {
-    experimental = {
-      commands = {
-        commands = {
-          "rust-analyzer.showReferences",
-          "rust-analyzer.runSingle",
-          "rust-analyzer.debugSingle",
-        },
-      },
-      serverStatusNotification = true,
-    },
-  }),
-  filetypes = { "rust" },
-  settings = {
-    ["rust-analyzer"] = { diagnostics = { enable = false } },
-  },
-})
-
--- docker
-vim.lsp.config("docker_compose_language_service", {
-  cmd = { "docker-compose-langserver", "--stdio" },
-  capabilities = capabilities,
-  filetypes = { "yaml.docker-compose" },
-})
-
--- tailwind
-local tailwind_filetypes = {
-  "astro",
-  "handlebars",
-  "html",
-  "htmlangular",
-  "mustache",
-  "php",
-  "twig",
-  "css",
-  "less",
-  "postcss",
-  "sass",
-  "scss",
-  "stylus",
-  "javascriptreact",
-  "typescriptreact",
-  "vue",
-  "svelte",
-}
-local tailwind_capabilities = vim.tbl_deep_extend("force", {}, capabilities, {
-  workspace = {
-    didChangeWatchedFiles = { dynamicRegistration = true },
-  },
-})
-
-vim.lsp.config("tailwindcss", {
-  cmd = { "tailwindcss-language-server", "--stdio" },
-  capabilities = tailwind_capabilities,
-  filetypes = tailwind_filetypes,
-})
-
--- taplo
-vim.lsp.config("taplo", {
-  cmd = { "taplo", "lsp", "stdio" },
-  capabilities = capabilities,
-  filetypes = { "toml" },
-})
-
-vim.lsp.enable(servers)
-
-return { servers = servers }
+return M
