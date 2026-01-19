@@ -3,11 +3,6 @@
 </div>
 &nbsp;
 
-| ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot1.png) | ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot2.png) | ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot3.png) | ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot4.png) | ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot5.png) |
-|:---------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|
-
----
-
 # ikivim setup
 
 This configuration is built from scratch, focused on speed, clarity and
@@ -97,3 +92,11 @@ Used to manage all plugins and allow easy setup on new machines.
 
 ### Navigation
 - [flash.nvim](https://github.com/folke/flash.nvim) – Motion jumps
+
+---
+
+## Screenshots
+
+| ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot1.png) | ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot2.png) | ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot3.png) | ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot4.png) | ![](https://raw.githubusercontent.com/Mathiew82/ikivim/refs/heads/main/screenshot5.png) |
+|:---------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|
+
