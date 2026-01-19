@@ -1,8 +1,12 @@
 <div align="center">
     <img src="https://raw.githubusercontent.com/Mathiew82/ikivim/main/logo.png" alt="ikivim">
 </div>
-
 &nbsp;
+
+| ![](./screenshot1.png) | ![](./screenshot2.png) | ![](./screenshot3.png) | ![](./screenshot4.png) | ![](./screenshot5.png) |
+|:---------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|
+
+---
 
 # ikivim setup
 
