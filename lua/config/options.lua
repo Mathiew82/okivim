@@ -20,10 +20,6 @@ vim.opt.signcolumn = "yes"        -- Always show sign column
 
 vim.opt.foldmethod = "syntax"     -- Create folds based on syntax highlighting
 vim.opt.foldlevelstart = 99       -- Start with all folds open
--- Folding:
---   za = toggle fold under cursor
---   zR = open all folds
---   zM = close all folds
 
 vim.opt.path:append("**")
 vim.opt.suffixesadd:append({ ".ts", ".tsx", ".js", ".jsx", ".json", ".mjs", ".cjs" })
