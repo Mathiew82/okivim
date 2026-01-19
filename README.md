@@ -45,9 +45,7 @@ These LSPs are automatically installed and enabled:
 
 ## Plugin manager
 
--   **lazy.nvim**
-
-Used to manage all plugins and allow easy setup on new machines.
+- [lazy.nvim](https://github.com/folke/lazy.nvim) - Plugin manager
 
 ---
 
