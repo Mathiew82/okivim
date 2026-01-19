@@ -76,9 +76,6 @@ These LSPs are automatically installed and enabled:
 - [aerial.nvim](https://github.com/stevearc/aerial.nvim) – Code outline
 - [flash.nvim](https://github.com/folke/flash.nvim) – Motion jumps
 
-### Git
-- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) – Git indicators
-
 ### Interface
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) – Status line
 - [which-key.nvim](https://github.com/folke/which-key.nvim) – Keymap helper
@@ -89,6 +86,10 @@ These LSPs are automatically installed and enabled:
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) – Auto close pairs
 - [mini.surround](https://github.com/nvim-mini/mini.surround) – Surround editing
 - [treesj](https://github.com/Wansmer/treesj) – Split/join code
+- [yanky.nvim](https://github.com/gbprod/yanky.nvim) – Yank history
+
+### Git
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) – Git indicators
 
 ---
 
