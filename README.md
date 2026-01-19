@@ -74,6 +74,7 @@ These LSPs are automatically installed and enabled:
 ### Search and navigation
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) – Fuzzy finder
 - [aerial.nvim](https://github.com/stevearc/aerial.nvim) – Code outline
+- [flash.nvim](https://github.com/folke/flash.nvim) – Motion jumps
 
 ### Git
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) – Git indicators
@@ -88,9 +89,6 @@ These LSPs are automatically installed and enabled:
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs) – Auto close pairs
 - [mini.surround](https://github.com/nvim-mini/mini.surround) – Surround editing
 - [treesj](https://github.com/Wansmer/treesj) – Split/join code
-
-### Navigation
-- [flash.nvim](https://github.com/folke/flash.nvim) – Motion jumps
 
 ---
 
