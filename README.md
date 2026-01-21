@@ -8,7 +8,7 @@
 > You can use this configuration; it's stable. However, the following still needs to be added.
 
 ### Pending
-- ⬜ Sessions Manager
+- ✅ Sessions Manager
 - ⬜ DAP Adapter
 - ⬜ DAP UI
 - ⬜ DAP Languages
