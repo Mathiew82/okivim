@@ -20,7 +20,7 @@ A minimal and efficient Neovim configuration focused on simplicity, performance,
 
 It provides a clean foundation with modern features like LSP, formatting, and diagnostics, while keeping the configuration transparent and easy to customize.
 
-IkiVim is built to stay fast, predictable, and out of your way — giving you a setup that grows with your workflow, not against it.
+Built to stay fast, predictable, and out of your way — giving you a setup that grows with your workflow.
 
 ![](https://raw.githubusercontent.com/Mathiew82/okivim/refs/heads/main/screenshot1.png)
 
@@ -87,8 +87,6 @@ IkiVim is built to stay fast, predictable, and out of your way — giving you a 
 ## Plugin manager
 
 - [lazy.nvim](https://github.com/folke/lazy.nvim) - *Plugin manager*
-
----
 
 ## Installed Plugins
 
