@@ -23,6 +23,7 @@ vim.keymap.set("n", "<leader>f", "/", { desc = "Search forward" })
 -- ------------------------------
 -- Telescope Keymaps
 -- ------------------------------
+vim.keymap.set("n", "<leader><Space>", "<cmd>Telescope commands<CR>", { desc = "Command palette" })
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Live grep (search text in project)" })
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Find buffers" })
