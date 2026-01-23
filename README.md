@@ -14,13 +14,7 @@
 
 &nbsp;
 
-# okivim
-
-A minimal and efficient Neovim configuration focused on simplicity, performance, and maintainability.
-
-It provides a clean foundation with modern features like LSP, formatting, and diagnostics, while keeping the configuration transparent and easy to customize.
-
-Built to stay fast, predictable, and out of your way — giving you a setup that grows with your workflow.
+okivim is a minimal and efficient Neovim configuration focused on simplicity, performance, and maintainability. It provides a clean foundation with modern features like LSP, formatting, and diagnostics, while keeping the configuration transparent and easy to customize. Built to stay fast, predictable, and out of your way — giving you a setup that grows with your workflow.
 
 ![](https://raw.githubusercontent.com/Mathiew82/okivim/refs/heads/main/screenshot1.png)
 
