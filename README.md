@@ -113,7 +113,7 @@ These LSPs are automatically installed and enabled:
 - [x] DAP Adapter
 - [x] DAP UI
 - [x] DAP Languages
-- [ ] Improve autocomplete and LSP info popups
+- [x] Improve autocomplete and LSP info popups
 
 ---
 
