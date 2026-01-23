@@ -114,6 +114,7 @@ These LSPs are automatically installed and enabled:
 - [x] DAP UI
 - [x] DAP Languages
 - [x] Improve autocomplete and LSP info popups
+- [ ] Create the keymaps documentation page
 
 ---
 
