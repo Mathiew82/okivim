@@ -22,7 +22,8 @@ full control over plugins and features.
 
 ---
 
-## Language servers (managed by Mason)
+## Language servers
+**managed by Mason**
 
 These LSPs are automatically installed and enabled:
 
@@ -41,7 +42,8 @@ These LSPs are automatically installed and enabled:
 - vue_ls
 - yamlls
 
-## Formatters (managed by Mason)
+## Formatters
+**managed by Mason**
 
 - prettierd
 - taplo
