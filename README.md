@@ -23,9 +23,6 @@ full control over plugins and features.
 ---
 
 ## Language servers
-***(managed by Mason)***
-
-These LSPs are automatically installed and enabled:
 
 - bashls
 - cssls
@@ -43,82 +40,81 @@ These LSPs are automatically installed and enabled:
 - yamlls
 
 ## Formatters
-***(managed by Mason)***
-
-These formatters are automatically installed and enabled:
 
 - prettierd
 - taplo
 
 ## Debug adapters (DAP)
-***(managed by Mason)***
 
-These debug adapters are automatically installed and enabled:
+- debugpy - *Python*
+- codelldb - *Rust/C/C++*
+- js-debug-adapter - *JS/TS*
+- php-debug-adapter - *PHP*
 
-- debugpy - Python
-- codelldb - Rust/C/C++
-- js-debug-adapter - JS/TS
-- php-debug-adapter - PHP
+&nbsp;
+
+> [!NOTE]  
+> LSPs, formatters, linters, and debug adapters from these lists are automatically installed and enabled. All of them are managed by Mason.
 
 ---
 
 ## Plugin manager
 
-- [lazy.nvim](https://github.com/folke/lazy.nvim) - Plugin manager
+- [lazy.nvim](https://github.com/folke/lazy.nvim) - *Plugin manager*
 
 ---
 
 ## Installed Plugins
 
 ### Theme
-- [catppuccin.nvim](https://github.com/catppuccin/nvim) – Color scheme
+- [catppuccin.nvim](https://github.com/catppuccin/nvim) – *Color scheme*
 
 ### Autocomplete
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) – Completion engine
-- [LuaSnip](https://github.com/L3MON4D3/LuaSnip) – Snippets engine
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) – *Completion engine*
+- [LuaSnip](https://github.com/L3MON4D3/LuaSnip) – *Snippets engine*
 
 ### LSP and Tools
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) – LSP setup
-- [mason.nvim](https://github.com/williamboman/mason.nvim) – LSP/DAP/Linter/Formatter installer
-- [mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) – Mason helper
-- [fidget.nvim](https://github.com/j-hui/fidget.nvim) – LSP progress UI
-- [conform.nvim](https://github.com/stevearc/conform.nvim) – Code formatter
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) – *LSP setup*
+- [mason.nvim](https://github.com/williamboman/mason.nvim) – *LSP/DAP/Linter/Formatter installer*
+- [mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) – *Mason helper*
+- [fidget.nvim](https://github.com/j-hui/fidget.nvim) – *LSP progress UI*
+- [conform.nvim](https://github.com/stevearc/conform.nvim) – *Code formatter*
 
 ### Debugging (DAP)
-- [mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim) – Mason integration for DAP
-- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) – Debugger UI
-- [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text) – Inline debug values
-- [nvim-dap-vscode-js](https://github.com/mxsdev/nvim-dap-vscode-js) – VS Code JS debugger adapter
-- [nvim-nio](https://github.com/nvim-neotest/nvim-nio) – Async IO dependency
+- [mason-nvim-dap.nvim](https://github.com/jay-babu/mason-nvim-dap.nvim) – *Mason integration for DAP*
+- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) – *Debugger UI*
+- [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text) – *Inline debug values*
+- [nvim-dap-vscode-js](https://github.com/mxsdev/nvim-dap-vscode-js) – *VS Code JS debugger adapter*
+- [nvim-nio](https://github.com/nvim-neotest/nvim-nio) – *Async IO dependency*
 
 ### Coloring and syntax
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) – Syntax highlighting
-- [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) – Color preview
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) – *Syntax highlighting*
+- [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) – *Color preview*
 
 ### File Explorer
-- [oil.nvim](https://github.com/stevearc/oil.nvim) – File manager
+- [oil.nvim](https://github.com/stevearc/oil.nvim) – *File manager*
 
 ### Search and navigation
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) – Fuzzy finder
-- [aerial.nvim](https://github.com/stevearc/aerial.nvim) – Code outline
-- [flash.nvim](https://github.com/folke/flash.nvim) – Motion jumps
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) – *Fuzzy finder*
+- [aerial.nvim](https://github.com/stevearc/aerial.nvim) – *Code outline*
+- [flash.nvim](https://github.com/folke/flash.nvim) – *Motion jumps*
 
 ### Interface
-- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) – Status line
-- [which-key.nvim](https://github.com/folke/which-key.nvim) – Keymap helper
-- [mini.starter](https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-starter.md) – Start screen
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) – *Status line*
+- [which-key.nvim](https://github.com/folke/which-key.nvim) – *Keymap helper*
+- [mini.starter](https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-starter.md) – *Start screen*
 
 ### Edition
-- [Comment.nvim](https://github.com/numToStr/Comment.nvim) – Comment toggle
-- [nvim-autopairs](https://github.com/windwp/nvim-autopairs) – Auto close pairs
-- [mini.surround](https://github.com/nvim-mini/mini.surround) – Surround editing
-- [treesj](https://github.com/Wansmer/treesj) – Split/join code
-- [yanky.nvim](https://github.com/gbprod/yanky.nvim) – Yank history
-- [mynotes.nvim](https://github.com/Mathiew82/mynotes.nvim) – Your notes
-- [phantom.nvim](https://github.com/Mathiew82/phantom.nvim) – Session manager
+- [Comment.nvim](https://github.com/numToStr/Comment.nvim) – *Comment toggle*
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs) – *Auto close pairs*
+- [mini.surround](https://github.com/nvim-mini/mini.surround) – *Surround editing*
+- [treesj](https://github.com/Wansmer/treesj) – *Split/join code*
+- [yanky.nvim](https://github.com/gbprod/yanky.nvim) – *Yank history*
+- [mynotes.nvim](https://github.com/Mathiew82/mynotes.nvim) – *Your notes*
+- [phantom.nvim](https://github.com/Mathiew82/phantom.nvim) – *Session manager*
 
 ### Git
-- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) – Git indicators
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) – *Git indicators*
 
 ---
 
