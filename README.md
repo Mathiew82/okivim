@@ -7,11 +7,11 @@
 > In progress...
 > You can use this configuration; it's stable. However, the following still needs to be added.
 
-### Pending
-- ✅ Sessions Manager (phantom.nvim)
-- ⬜ DAP Adapter
-- ⬜ DAP UI
-- ⬜ DAP Languages
+### TODO list
+- [x] Sessions Manager (phantom.nvim)
+- [ ] DAP Adapter
+- [ ] DAP UI
+- [ ] DAP Languages
 
 ---
 
