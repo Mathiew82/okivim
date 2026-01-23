@@ -1,12 +1,38 @@
 <div align="center">
     <img src="https://raw.githubusercontent.com/Mathiew82/okivim/main/logo.png" width="400" alt="okivim">
 </div>
+
+<h4 align="center">
+    <a href="#installation">Installation</a>
+    <span>&nbsp;+&nbsp;</span>
+    <a href="#language-servers">LSP's</a>
+    <span>&nbsp;+&nbsp;</span>
+    <a href="#plugin-manager">Plugins</a>
+    <span>&nbsp;+&nbsp;</span>
+    <a href="./docs/keymaps.md">Keymaps</a>
+</h4>
+
 &nbsp;
 
-# okivim setup
+# okivim
 
-This configuration is built from scratch, focused on speed, clarity and
-full control over plugins and features.
+A minimal and efficient Neovim configuration focused on simplicity, performance, and maintainability.
+
+It provides a clean foundation with modern features like LSP, formatting, and diagnostics, while keeping the configuration transparent and easy to customize.
+
+IkiVim is built to stay fast, predictable, and out of your way — giving you a setup that grows with your workflow, not against it.
+
+![](https://raw.githubusercontent.com/Mathiew82/okivim/refs/heads/main/screenshot1.png)
+
+![](https://raw.githubusercontent.com/Mathiew82/okivim/refs/heads/main/screenshot2.png)
+
+## Features
+
+- ⚡ Minimal, clean, and distraction-free setup
+- 🎯 Thoughtful defaults that respect core Neovim behavior
+- 🧩 Fully modular configuration, easy to customize
+- 🧭 Clean navigation — no tabs, no file tree, no distractions
+- 🛠 Carefully curated plugins, no unnecessary bloat
 
 ## Requirements
 
