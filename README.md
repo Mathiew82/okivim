@@ -66,6 +66,7 @@ These LSPs are automatically installed and enabled:
 ### LSP and Tools
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) – LSP setup
 - [mason.nvim](https://github.com/williamboman/mason.nvim) – LSP/DAP installer
+- [mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) – Mason helper
 - [fidget.nvim](https://github.com/j-hui/fidget.nvim) – LSP progress UI
 - [conform.nvim](https://github.com/stevearc/conform.nvim) – Code formatter
 
@@ -250,6 +251,12 @@ Huge thanks to these amazing developers for their awesome work:
       <a href="https://github.com/Mathiew82">
         <img src="https://avatars.githubusercontent.com/u/22583657?v=4" width="80"/>
         <br/>Mathiew82
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/WhoIsSethDaniel">
+        <img src="https://avatars.githubusercontent.com/u/4702260?v=4" width="80"/>
+        <br/>WhoIsSethDaniel
       </a>
     </td>
   </tr>
