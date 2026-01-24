@@ -10,6 +10,7 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<leader>.` | Normal | Last buffer |
 | `<Tab>` | Normal | Next buffer |
 | `<S-Tab>` | Normal | Previous buffer |
+| `<leader>` | Normal | Close other buffers |
 | `<leader>bls` | Normal | List buffers |
 | `<leader>o` | Normal | Insert empty line below |
 | `<leader>v` | Normal | Select current line *(without line break)* |
