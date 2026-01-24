@@ -115,6 +115,8 @@ okivim is a minimal and efficient Neovim configuration focused on simplicity, pe
 - [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
 
+Use `:Theme <name>` to switch themes. The selected theme is saved and automatically restored on the next startup.
+
 ### Autocomplete
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) – *Completion engine*
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip) – *Snippets engine*
