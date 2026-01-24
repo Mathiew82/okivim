@@ -6,5 +6,6 @@ return {
     integrations = {
       treesitter = true,
     },
+    flavour = "mocha", -- latte | frappe | macchiato | mocha
   },
 }

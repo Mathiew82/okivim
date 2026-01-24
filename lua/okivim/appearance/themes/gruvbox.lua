@@ -1,5 +1,7 @@
 return {
   "ellisonleao/gruvbox.nvim",
   priority = 1000,
-  opts = {},
+  opts = {
+    contrast = "hard", -- soft | medium | hard
+  }
 }
