@@ -6,7 +6,6 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 
 | Keymap | Mode | Description |
 |--------|------|-------------|
-| `<leader>,,` | Normal | Jump to alternate file |
 | `<leader>,` | Normal | First buffer |
 | `<leader>.` | Normal | Last buffer |
 | `<Tab>` | Normal | Next buffer |

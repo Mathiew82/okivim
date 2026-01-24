@@ -1,7 +1,6 @@
 -- ------------------------------
 -- Global Keymaps
 -- ------------------------------
-vim.keymap.set("n", "<leader>,,", "<C-^>", { desc = "Jump to alternate file" })
 vim.keymap.set("n", "<leader>,", vim.cmd.bfirst, { desc = "First buffer" })
 vim.keymap.set("n", "<leader>.", vim.cmd.blast, { desc = "Last buffer" })
 vim.keymap.set("n", "<Tab>", vim.cmd.bnext, { desc = "Next buffer" })
