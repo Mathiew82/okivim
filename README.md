@@ -45,7 +45,7 @@ okivim is a minimal and efficient Neovim configuration focused on simplicity, pe
 
 - Neovim >= 0.11.2
 - Git >= 2.19.0
-- a Nerd Font to display some icons (optional)
+- a [Nerd Font](https://www.nerdfonts.com/) to display some icons (optional)
 
 ---
 
