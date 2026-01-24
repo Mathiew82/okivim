@@ -110,9 +110,9 @@ okivim is a minimal and efficient Neovim configuration focused on simplicity, pe
 ### Themes
 - [catppuccin](https://github.com/catppuccin/nvim)
 - [gruvbox](https://github.com/ellisonleao/gruvbox.nvim)
-- [kanagawa](https://github.com/rebelot/kanagawa.nvim)
+- [kanagawa](https://github.com/rebelot/kanagawa.nvim) - *dragon / wave / lotus*
 - [tokyonight](https://github.com/folke/tokyonight.nvim)
-- [rose-pine](https://github.com/rose-pine/neovim)
+- [rose-pine](https://github.com/rose-pine/neovim) - *main / moon / dawn*
 
 Use `:Theme <name>` to switch themes. The selected theme is saved and automatically restored on the next startup.
 
