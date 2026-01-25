@@ -16,5 +16,3 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("okivim.plugins")
-require("okivim.appearance").apply_saved()
-require("okivim.appearance.cmd").setup()

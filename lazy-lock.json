@@ -23,6 +23,7 @@
   "mini.starter": { "branch": "main", "commit": "8ee6ce6a4c9be47682516908557cc062c4d595a2" },
   "mini.surround": { "branch": "main", "commit": "f9358544ed06bc10197e698b7fc8dc5963be3f4b" },
   "mynotes.nvim": { "branch": "main", "commit": "61f44c565083f4e41fddc69d30b255a2f007ea65" },
+  "nightfox.nvim": { "branch": "main", "commit": "ba47d4b4c5ec308718641ba7402c143836f35aa9" },
   "nvim-autopairs": { "branch": "master", "commit": "c2a0dd0d931d0fb07665e1fedb1ea688da3b80b4" },
   "nvim-cmp": { "branch": "main", "commit": "da88697d7f45d16852c6b2769dc52387d1ddc45f" },
   "nvim-colorizer.lua": { "branch": "master", "commit": "a065833f35a3a7cc3ef137ac88b5381da2ba302e" },
