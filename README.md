@@ -386,7 +386,7 @@ Huge thanks to these amazing developers for their awesome work:
 <br>
 
 <div align="center">
-© 2025 Alberto Mateo Alcala. <a href="https://github.com/okivim/okivim/blob/main/LICENSE">MIT License</a>.
+© 2026 Alberto Mateo Alcalá. <a href="https://github.com/okivim/okivim/blob/main/LICENSE">MIT License</a>.
 <a href="#top">🔝</a>
 </div>
 
