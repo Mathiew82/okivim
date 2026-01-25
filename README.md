@@ -91,6 +91,7 @@ okivim is a minimal and efficient Neovim configuration focused on simplicity, pe
 
 - bashls
 - cssls
+- clangd
 - docker_compose_language_service
 - eslint
 - jsonls
