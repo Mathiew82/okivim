@@ -30,6 +30,9 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<C-j>` | Normal | Go to the down window |
 | `<C-k>` | Normal | Go to the up window |
 | `<C-l>` | Normal | Go to the right window |
+| `<leader>w` | Normal | Split window |
+| `<leader>wv` | Normal | Split window vertically |
+| `<leader>wq` | Normal | Quit a window |
 
 ## Plugin Keymaps
 
