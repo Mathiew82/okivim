@@ -110,9 +110,10 @@ okivim is a minimal and efficient Neovim configuration focused on simplicity, pe
 ### Themes
 - [catppuccin](https://github.com/catppuccin/nvim)
 - [gruvbox](https://github.com/ellisonleao/gruvbox.nvim)
-- [kanagawa](https://github.com/rebelot/kanagawa.nvim) - *dragon / wave / lotus*
+- [kanagawa](https://github.com/rebelot/kanagawa.nvim)
 - [tokyonight](https://github.com/folke/tokyonight.nvim)
-- [rose-pine](https://github.com/rose-pine/neovim) - *main / moon / dawn*
+- [rose-pine](https://github.com/rose-pine/neovim)
+- [nightfox](https://github.com/EdenEast/nightfox.nvim)
 
 Use `:Theme <name>` to switch themes. The selected theme is saved and automatically restored on the next startup.
 
@@ -315,6 +316,29 @@ Huge thanks to these amazing developers for their awesome work:
     <td align="center">
       <a href="https://github.com/jay-babu/mason-nvim-dap.nvim">
         <img src="https://avatars.githubusercontent.com/u/2443058?v=4" width="50" alt="jay-babu/mason-nvim-dap.nvim"/>
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ellisonleao">
+        <img src="https://avatars.githubusercontent.com/u/544372?v=4" width="50" alt="ellisonleao"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rebelot">
+        <img src="https://avatars.githubusercontent.com/u/3069142?v=4" width="50" alt="rebelot"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rose-pine">
+        <img src="https://avatars.githubusercontent.com/u/96490892?v=4" width="50" alt="rose-pine"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/EdenEast">
+        <img src="https://avatars.githubusercontent.com/u/22276940?v=4" width="50" alt="EdenEast"/>
       </a>
     </td>
   </tr>
