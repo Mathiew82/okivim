@@ -14,7 +14,7 @@ This documentation contains all keymaps configured in the Neovim setup, organize
 | `<leader>bls` | Normal | List buffers |
 | `<leader>o` | Normal | Insert empty line below |
 | `<leader>v` | Normal | Select current line *(without line break)* |
-| `<leader>vy` | Normal | Copy current line *(without line break)* |
+| `<leader>yv` | Normal | Copy current line *(without line break)* |
 | `<leader>x` | Normal | Close buffer |
 | `<leader>a` | Normal | Select entire file |
 | `<leader>y` | Visual | Copy selection |
