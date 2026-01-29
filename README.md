@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/okivim/okivim/main/logo.png" width="400" alt="okivim">
+    <img src="https://raw.githubusercontent.com/okivim/okivim/main/logo.png" width="320" alt="okivim">
 </div>
 
 <h4 align="center">
