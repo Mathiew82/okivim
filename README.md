@@ -14,19 +14,13 @@
     <a href="./docs/keymaps.md">Keymaps</a>
 </h4>
 
-<div align="center"><p>
-    <a href="https://github.com/okivim/okivim/blob/main/LICENSE">
-      <img alt="License" src="https://img.shields.io/github/license/okivim/okivim?style=for-the-badge&logo=libreofficeimpress&color=7788cc&logoColor=D9E0EE&labelColor=302D41" />
-    </a>
-    <a href="https://github.com/okivim/okivim/stargazers">
-      <img alt="Stars" src="https://img.shields.io/github/stars/okivim/okivim?style=for-the-badge&logo=apachespark&color=96dff5&logoColor=D9E0EE&labelColor=302D41" />
-    </a>
-    <a href="https://github.com/okivim/okivim/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/okivim/okivim?style=for-the-badge&logo=bilibili&color=F5E0DC&logoColor=D9E0EE&labelColor=302D41" />
-    </a>
-    <a href="https://github.com/okivim/okivim">
-      <img alt="Repo Size" src="https://img.shields.io/github/repo-size/okivim/okivim?color=%23DDB6F2&label=SIZE&logo=pkgsrc&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41" />
-    </a>
+<div align="center">
+
+[![License](https://img.shields.io/github/license/okivim/okivim?style=flat-square&logo=libreofficeimpress&color=3B73E0&logoColor=D9E0EE&labelColor=302D41)](https://github.com/okivim/okivim/blob/main/LICENSE)&nbsp;
+[![Stars](https://img.shields.io/github/stars/okivim/okivim?style=flat-square&logo=apachespark&color=3B73E0&logoColor=D9E0EE&labelColor=302D41)](https://github.com/okivim/okivim/stargazers)&nbsp;
+[![Issues](https://img.shields.io/github/issues/okivim/okivim?style=flat-square&logo=bilibili&color=3B73E0&logoColor=D9E0EE&labelColor=302D41)](https://github.com/okivim/okivim/issues)&nbsp;
+[![SIZE](https://img.shields.io/github/repo-size/okivim/okivim?style=flat-square&logo=pkgsrc&color=3B73E0&logoColor=D9E0EE&labelColor=302D41&label=size)](https://github.com/okivim/okivim)
+
 </div>
 
 **Okivim** is a minimal and efficient **Neovim configuration** focused on **simplicity, performance, and maintainability**. It provides a clean foundation with modern features like LSP, formatting, and diagnostics, while keeping the configuration transparent and easy to customize. Built to stay fast, predictable, and out of your way — giving you a setup that grows with your workflow.
