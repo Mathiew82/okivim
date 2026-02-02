@@ -15,6 +15,12 @@ return {
           vue             = { "prettierd" },
         },
 
+        formatters = {
+          stylelint = {
+            timeout_ms = 3000,
+          },
+        },
+
         format_on_save = {
           timeout_ms = 500,
           lsp_fallback = true,
