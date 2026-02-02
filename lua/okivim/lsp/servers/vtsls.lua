@@ -22,7 +22,7 @@ return function(capabilities)
         },
       },
     },
-    filetypes = { "typescript", "javascript", "vue" },
+    filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact", "vue" },
     capabilities = capabilities,
   })
 end
