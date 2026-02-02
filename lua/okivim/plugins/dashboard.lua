@@ -15,6 +15,7 @@ return {
       local header = {
         "",
         "",
+        "",
         "              oooo         .oo.               .oo.                    ",
         "              oooo         'oo'               'oo'                    ",
         "              oooo                                                    ",
@@ -23,6 +24,7 @@ return {
         ":ooo     :ooo oooooooo     oooo   oooo   oo   oooo  oooo   oooo   oooo",
         "'ooo.    ooo' oooo  oooo   oooo    oooo.oo    oooo  oooo   oooo   oooo",
         "  `ooooooo'   oooo    oooo oooo     oooo'     oooo  oooo   oooo   oooo",
+        "",
         "",
         "",
       }
