@@ -73,7 +73,3 @@ You can now easily install Okivim using our installer.
 
 The installer checks are informational and help you identify which dependencies are missing.
 Instructions on how to install these dependencies can be found in Getting Started → Dependencies.
-
-> [!TIP]
-> It is recommended to run `:LazyHealth` after installation. This will load all plugins and check if everything is working correctly.
-
