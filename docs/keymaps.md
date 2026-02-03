@@ -80,6 +80,18 @@ These keymaps are available in buffers with LSP enabled.
 | `-` | Normal | Open parent directory |
 | `g.` | Normal | Toggle hidden files and directories |
 
+### Mini Surround
+
+| Keymap | Mode | Description |
+|--------|------|-------------|
+| `sa` | Visual | Add surrounding |
+| `sd` | Visual | Delete surrounding |
+| `sf` | Visual | Find surrounding |
+| `sF` | Visual | Find surrounding (left) |
+| `sh` | Visual | Highlight surrounding |
+| `sr` | Visual | Replace surrounding |
+| `sn` | Visual | Update search range |
+
 ### Gitsigns
 
 | Keymap | Mode | Description |
