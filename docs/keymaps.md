@@ -92,6 +92,8 @@ These keymaps are available in buffers with LSP enabled.
 | `sr` | Visual | Replace surrounding |
 | `sn` | Visual | Update search range |
 
+- [more info](https://github.com/nvim-mini/mini.surround)
+
 ### Gitsigns
 
 | Keymap | Mode | Description |
@@ -104,6 +106,8 @@ These keymaps are available in buffers with LSP enabled.
 | `<leader>gd` | Normal | Diff against HEAD |
 | `<leader>gn` | Normal | Toggle number highlighting for changes |
 | `<leader>gl` | Normal | Toggle line highlighting for changes |
+
+- [more info](https://github.com/lewis6991/gitsigns.nvim)
 
 ### Aerial
 
@@ -145,6 +149,8 @@ These keymaps are available in buffers with LSP enabled.
 | `r` | Operator | Remote flash |
 | `R` | Operator/Visual | Treesitter search |
 | `<C-s>` | Command | Toggle flash search |
+
+- [more info](https://github.com/folke/flash.nvim)
 
 ---
 
