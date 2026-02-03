@@ -176,7 +176,7 @@ debugpy (Python) - codelldb (Rust / C / C++) - js-debug-adapter (JS / TS) - php-
 ### Interface
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) – *Status line*
 - [which-key.nvim](https://github.com/folke/which-key.nvim) – *Keymap helper*
-- [mini.starter](https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-starter.md) – *Start screen*
+- [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim) – *Start screen*
 
 ### Edition
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim) – *Comment toggle*
