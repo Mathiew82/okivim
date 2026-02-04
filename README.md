@@ -374,6 +374,23 @@ Huge thanks to these amazing developers for their awesome work:
       </a>
     </td>
   </tr>
+
+  <tr>
+    <td align="center">
+      <a href="https://github.com/nvimdev">
+        <img src="https://avatars.githubusercontent.com/u/130372558?v=4" width="50" alt="ellisonleao"/>
+      </a>
+    </td>
+    <td align="center">
+	  <a href="https://github.com/Mathiew82">
+        <img src="https://avatars.githubusercontent.com/u/22583657?v=4" width="50" alt="ellisonleao"/>
+      </a>
+    </td>
+    <td align="center">
+    </td>
+    <td align="center">
+    </td>
+  </tr>
 </table>
 
 </div>
