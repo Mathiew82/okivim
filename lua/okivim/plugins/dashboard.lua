@@ -16,10 +16,11 @@ return {
         "",
         "",
         "",
+        "",
         "              oooo         .oo.               .oo.                    ",
         "              oooo         'oo'               'oo'                    ",
         "              oooo                                                    ",
-        "  .oooooooo   oooo   -ooo  oooo oooo       oo oooo  oooo.oooooooooooo ",
+        "  .oooooooo   oooo   -ooo  oooo oooo       oo oooo  oooo.ooooo.oooooo ",
         ".ooo'    ooo. oooo -ooo    oooo  oooo     oo  oooo  oooo   oooo   oooo",
         ":ooo     :ooo oooooooo     oooo   oooo   oo   oooo  oooo   oooo   oooo",
         "'ooo.    ooo' oooo  oooo   oooo    oooo.oo    oooo  oooo   oooo   oooo",
@@ -47,7 +48,16 @@ return {
           footer = function()
             local stats = require("lazy").stats()
             local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
-            return { "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms" }
+            return {
+              "",
+              "⚡ Neovim loaded "
+              .. stats.loaded
+              .. "/"
+              .. stats.count
+              .. " plugins in "
+              .. ms
+              .. "ms"
+            }
           end,
         },
       }
