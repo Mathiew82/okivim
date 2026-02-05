@@ -98,6 +98,41 @@ These keymaps are available in buffers with LSP enabled.
 | `sr` | Visual | Replace surrounding |
 | `sn` | Visual | Update search range |
 
+### Fugitive
+
+#### Global
+
+| Keymap | Mode | Description |
+|-------|------|-------------|
+| `<leader>G` | Normal | Open Git status |
+| `<leader>Gb` | Normal | Open Git blame |
+
+#### Inside `:Git` buffer
+
+| Keymap | Mode | Description |
+|-------|------|-------------|
+| `j / k` | Normal | Move between files |
+| `-` | Normal | Stage / unstage file or hunk |
+| `=` | Normal | Show diff of the file under cursor |
+| `cc` | Normal | Commit staged changes |
+| `ca` | Normal | Amend last commit |
+| `ce` | Normal | Extend last commit |
+| `dd` | Normal | Discard changes in file |
+| `D` | Normal | Show full diff |
+| `:q` | Normal | Close Git status buffer |
+
+#### Inside `:Git blame` buffer
+
+| Keymap | Mode | Description |
+|-------|------|-------------|
+| `<CR>` | Normal | Open commit under cursor |
+| `o` | Normal | Open commit in split |
+| `p` | Normal | Preview commit |
+| `:q` | Normal | Close blame buffer |
+
+> **Note**  
+> Fugitive follows a *buffer-centric workflow*: most Git actions are performed inside the `:Git` buffer using local keybindings, rather than global mappings.
+
 ### Gitsigns
 
 | Keymap | Mode | Description |

@@ -57,6 +57,12 @@ vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Recen
 vim.keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Oil: open parent directory" })
 
 -- ------------------------------
+-- Fugitive Keymaps
+-- ------------------------------
+vim.keymap.set("n", "<leader>G", "<cmd>Git<cr>", { desc = "Open Git status (Fugitive)" })
+vim.keymap.set("n", "<leader>Gb", "<cmd>Git<cr>", { desc = "Open Git blame (Fugitive)" })
+
+-- ------------------------------
 -- Gitsigns Keymaps
 -- ------------------------------
 vim.keymap.set("n", "<leader>gp", "<cmd>Gitsigns preview_hunk<CR>", {
