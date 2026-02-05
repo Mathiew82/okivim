@@ -6,10 +6,9 @@ vim.keymap.set("n", "<leader>.", vim.cmd.blast, { desc = "Last buffer" })
 vim.keymap.set("n", "<Tab>", vim.cmd.bnext, { desc = "Next buffer" })
 vim.keymap.set("n", "<S-Tab>", vim.cmd.bprevious, { desc = "Previous buffer" })
 vim.keymap.set("n", "<leader>bq", "<cmd>%bd|e#|bd#<CR>", { desc = "Close other buffers" })
-vim.keymap.set("n", "<leader>bls", vim.cmd.ls, { desc = "List buffers" })
-vim.keymap.set("n", "<leader>o", "o<Esc>k", { desc = "Insert empty line below" })
-vim.keymap.set("n", "<leader>v", "0v$h", { desc = "Select current line" })
-vim.keymap.set("n", "<leader>yv", "0v$hy", { desc = "Copy current line" })
+vim.keymap.set("n", "<leader>alb", "o<Esc>k", { desc = "Insert empty line below" })
+vim.keymap.set("n", "<leader>sl", "0v$h", { desc = "Select line (no newline)" })
+vim.keymap.set("n", "<leader>yl", "0v$hy", { desc = "Copy line (no newline)" })
 vim.keymap.set("n", "<leader>x", vim.cmd.bdelete, { desc = "Close buffer" })
 vim.keymap.set("n", "<leader>a", "ggVG", { desc = "Select entire file" })
 vim.keymap.set("v", "<leader>y", '"+y', { desc = "Copy selection" })
@@ -19,8 +18,6 @@ vim.keymap.set("v", "<", "<gv", { desc = "Indent left (keep selection)" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indent right (keep selection)" })
 vim.keymap.set("n", "<leader>dy", vim.diagnostic.open_float, { desc = "Show diagnostics" })
 vim.keymap.set("n", "<leader>f", "/", { desc = "Search forward" })
-vim.keymap.set("n", "<leader>t", "<cmd>split | terminal<CR>", { desc = "Split terminal" })
-vim.keymap.set("n", "<leader>tv", "<cmd>vsplit | terminal<CR>", { desc = "Split terminal vertically" })
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go to the left window" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go to the down window" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go to the up window" })
@@ -59,8 +56,8 @@ vim.keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Oil: open parent directory" }
 -- ------------------------------
 -- Fugitive Keymaps
 -- ------------------------------
-vim.keymap.set("n", "<leader>G", "<cmd>Git<cr>", { desc = "Open Git status (Fugitive)" })
-vim.keymap.set("n", "<leader>Gb", "<cmd>Git<cr>", { desc = "Open Git blame (Fugitive)" })
+vim.keymap.set("n", "<leader>G", "<cmd>Git<cr>", { desc = "Fugitive: Open Git status" })
+vim.keymap.set("n", "<leader>Gb", "<cmd>Git blame<cr>", { desc = "Fugitive: Open Git blame" })
 
 -- ------------------------------
 -- Diffview Keymaps
@@ -72,30 +69,15 @@ vim.keymap.set("n", "<leader>dc", "<cmd>DiffviewClose<cr>", { desc = "Diffview: 
 -- ------------------------------
 -- Gitsigns Keymaps
 -- ------------------------------
-vim.keymap.set("n", "<leader>gp", "<cmd>Gitsigns preview_hunk<CR>", {
-  desc = "Gitsigns: Preview hunks in popup"
-})
-vim.keymap.set("n", "<leader>gs", ":Gitsigns stage_hunk<CR>", {
-  desc = "Gitsigns: Stage hunk"
-})
-vim.keymap.set("n", "<leader>gr", ":Gitsigns reset_hunk<CR>", {
-  desc = "Gitsigns: Reset hunk"
-})
-vim.keymap.set("n", "<leader>gb", ":Gitsigns toggle_current_line_blame<CR>", {
-  desc = "Gitsigns: Toggle current line blame"
-})
-vim.keymap.set("n", "<leader>gi", ":Gitsigns show_commit<CR>", {
-  desc = "Gitsigns: Show info about the commit"
-})
-vim.keymap.set("n", "<leader>gd", ":Gitsigns diffthis<CR>", {
-  desc = "Gitsigns: Diff against HEAD"
-})
-vim.keymap.set("n", "<leader>gn", ":Gitsigns toggle_numhl<CR>", {
-  desc = "Gitsigns: Diff against HEAD"
-})
-vim.keymap.set("n", "<leader>gl", ":Gitsigns toggle_linehl<CR>", {
-  desc = "Gitsigns: Diff against HEAD"
-})
+vim.keymap.set("n", "<leader>gp", "<cmd>Gitsigns preview_hunk<CR>", { desc = "Gitsigns: Preview hunks in popup" })
+vim.keymap.set("n", "<leader>gs", "<cmd>Gitsigns stage_hunk<CR>", { desc = "Gitsigns: Stage hunk" })
+vim.keymap.set("n", "<leader>gr", "<cmd>Gitsigns reset_hunk<CR>", { desc = "Gitsigns: Reset hunk" })
+vim.keymap.set("n", "<leader>gb", "<cmd>Gitsigns toggle_current_line_blame<CR>",
+  { desc = "Gitsigns: Toggle current line blame" })
+vim.keymap.set("n", "<leader>gi", "<cmd>Gitsigns show_commit<CR>", { desc = "Gitsigns: Show info about the commit" })
+vim.keymap.set("n", "<leader>gd", "<cmd>Gitsigns diffthis<CR>", { desc = "Gitsigns: Diff against HEAD" })
+vim.keymap.set("n", "<leader>gn", "<cmd>Gitsigns toggle_numhl<CR>", { desc = "Gitsigns: Toggle number highlighting" })
+vim.keymap.set("n", "<leader>gl", "<cmd>Gitsigns toggle_linehl<CR>", { desc = "Gitsigns: Toggle line highlighting" })
 
 -- ------------------------------
 -- Aerial Keymaps

@@ -172,7 +172,6 @@ debugpy (Python) - codelldb (Rust / C / C++) - js-debug-adapter (JS / TS) - php-
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) – *Fuzzy finder*
 - [aerial.nvim](https://github.com/stevearc/aerial.nvim) – *Code outline*
 - [flash.nvim](https://github.com/folke/flash.nvim) – *Motion jumps*
-- [buffer_manager.nvim](https://github.com/j-morano/buffer_manager.nvim) – *Buffer manager*
 
 ### Interface
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) – *Status line*
@@ -390,28 +389,14 @@ Huge thanks to these amazing developers for their awesome work:
       </a>
     </td>
     <td align="center">
-	  <a href="https://github.com/j-morano">
-        <img src="https://avatars.githubusercontent.com/u/48717183?v=4" width="50"/>
+      <a href="https://github.com/sindrets">
+        <img src="https://avatars.githubusercontent.com/u/2786478?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
 	  <a href="https://github.com/tpope">
         <img src="https://avatars.githubusercontent.com/u/378?v=4" width="50"/>
       </a>
-    </td>
-  </tr>
-
-  <tr>
-    <td align="center">
-      <a href="https://github.com/sindrets">
-        <img src="https://avatars.githubusercontent.com/u/2786478?v=4" width="50"/>
-      </a>
-    </td>
-    <td align="center">
-    </td>
-    <td align="center">
-    </td>
-    <td align="center">
     </td>
   </tr>
 </table>
