@@ -172,6 +172,7 @@ debugpy (Python) - codelldb (Rust / C / C++) - js-debug-adapter (JS / TS) - php-
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) – *Fuzzy finder*
 - [aerial.nvim](https://github.com/stevearc/aerial.nvim) – *Code outline*
 - [flash.nvim](https://github.com/folke/flash.nvim) – *Motion jumps*
+- [buffer_manager.nvim](https://github.com/j-morano/buffer_manager.nvim) – *Buffer manager*
 
 ### Interface
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) – *Status line*
@@ -217,22 +218,22 @@ Huge thanks to these amazing developers for their awesome work:
   <tr>
     <td align="center">
       <a href="https://github.com/neovim">
-        <img src="https://avatars.githubusercontent.com/u/6471485?v=4" width="50" alt="neovim"/>
+        <img src="https://avatars.githubusercontent.com/u/6471485?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/catppuccin">
-        <img src="https://avatars.githubusercontent.com/u/10716688?v=4" width="50" alt="catppuccin"/>
+        <img src="https://avatars.githubusercontent.com/u/10716688?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/hrsh7th">
-        <img src="https://avatars.githubusercontent.com/u/6624273?v=4" width="50" alt="hrsh7th"/>
+        <img src="https://avatars.githubusercontent.com/u/6624273?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/L3MON4D3">
-        <img src="https://avatars.githubusercontent.com/u/3372537?v=4" width="50" alt="L3MON4D3"/>
+        <img src="https://avatars.githubusercontent.com/u/3372537?v=4" width="50"/>
       </a>
     </td>
   </tr>
@@ -240,22 +241,22 @@ Huge thanks to these amazing developers for their awesome work:
   <tr>
     <td align="center">
       <a href="https://github.com/williamboman">
-        <img src="https://avatars.githubusercontent.com/u/103369?v=4" width="50" alt="williamboman"/>
+        <img src="https://avatars.githubusercontent.com/u/103369?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/j-hui">
-        <img src="https://avatars.githubusercontent.com/u/107528?v=4" width="50" alt="j-hui"/>
+        <img src="https://avatars.githubusercontent.com/u/107528?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/stevearc">
-        <img src="https://avatars.githubusercontent.com/u/226654?v=4" width="50" alt="stevearc"/>
+        <img src="https://avatars.githubusercontent.com/u/226654?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/nvim-treesitter">
-        <img src="https://avatars.githubusercontent.com/u/67470847?v=4" width="50" alt="nvim-treesitter"/>
+        <img src="https://avatars.githubusercontent.com/u/67470847?v=4" width="50"/>
       </a>
     </td>
   </tr>
@@ -263,22 +264,22 @@ Huge thanks to these amazing developers for their awesome work:
   <tr>
     <td align="center">
       <a href="https://github.com/norcalli">
-        <img src="https://avatars.githubusercontent.com/u/694741?v=4" width="50" alt="norcalli"/>
+        <img src="https://avatars.githubusercontent.com/u/694741?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/nvim-telescope">
-        <img src="https://avatars.githubusercontent.com/u/67470847?v=4" width="50" alt="telescope"/>
+        <img src="https://avatars.githubusercontent.com/u/67470847?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/folke">
-        <img src="https://avatars.githubusercontent.com/u/292349?v=4" width="50" alt="folke"/>
+        <img src="https://avatars.githubusercontent.com/u/292349?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/nvim-lualine">
-        <img src="https://avatars.githubusercontent.com/u/5433930?v=4" width="50" alt="lualine"/>
+        <img src="https://avatars.githubusercontent.com/u/5433930?v=4" width="50"/>
       </a>
     </td>
   </tr>
@@ -286,22 +287,22 @@ Huge thanks to these amazing developers for their awesome work:
   <tr>
     <td align="center">
       <a href="https://github.com/nvim-mini">
-        <img src="https://avatars.githubusercontent.com/u/105671557?v=4" width="50" alt="nvim-mini"/>
+        <img src="https://avatars.githubusercontent.com/u/105671557?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/numToStr">
-        <img src="https://avatars.githubusercontent.com/u/44928135?v=4" width="50" alt="numToStr"/>
+        <img src="https://avatars.githubusercontent.com/u/44928135?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/windwp">
-        <img src="https://avatars.githubusercontent.com/u/13325328?v=4" width="50" alt="windwp"/>
+        <img src="https://avatars.githubusercontent.com/u/13325328?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/Wansmer">
-        <img src="https://avatars.githubusercontent.com/u/2406688?v=4" width="50" alt="Wansmer"/>
+        <img src="https://avatars.githubusercontent.com/u/2406688?v=4" width="50"/>
       </a>
     </td>
   </tr>
@@ -309,22 +310,22 @@ Huge thanks to these amazing developers for their awesome work:
   <tr>
     <td align="center">
       <a href="https://github.com/gbprod">
-        <img src="https://avatars.githubusercontent.com/u/26420719?v=4" width="50" alt="gbprod"/>
+        <img src="https://avatars.githubusercontent.com/u/26420719?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/lewis6991">
-        <img src="https://avatars.githubusercontent.com/u/143592?v=4" width="50" alt="lewis6991"/>
+        <img src="https://avatars.githubusercontent.com/u/143592?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/mxsdev/nvim-dap-vscode-js">
-        <img src="https://avatars.githubusercontent.com/u/26291168?v=4" width="50" alt="mxsdev/nvim-dap-vscode-js"/>
+        <img src="https://avatars.githubusercontent.com/u/26291168?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/WhoIsSethDaniel">
-        <img src="https://avatars.githubusercontent.com/u/4702260?v=4" width="50" alt="WhoIsSethDaniel"/>
+        <img src="https://avatars.githubusercontent.com/u/4702260?v=4" width="50"/>
       </a>
     </td>
   </tr>
@@ -332,22 +333,22 @@ Huge thanks to these amazing developers for their awesome work:
   <tr>
     <td align="center">
       <a href="https://github.com/rcarriga/nvim-dap-ui">
-        <img src="https://avatars.githubusercontent.com/u/1611543?v=4" width="50" alt="rcarriga/nvim-dap-ui"/>
+        <img src="https://avatars.githubusercontent.com/u/1611543?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/theHamsta/nvim-dap-virtual-text">
-        <img src="https://avatars.githubusercontent.com/u/1641923?v=4" width="50" alt="theHamsta/nvim-dap-virtual-text"/>
+        <img src="https://avatars.githubusercontent.com/u/1641923?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/williamboman/mason.nvim">
-        <img src="https://avatars.githubusercontent.com/u/103369?v=4" width="50" alt="williamboman/mason.nvim"/>
+        <img src="https://avatars.githubusercontent.com/u/103369?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/jay-babu/mason-nvim-dap.nvim">
-        <img src="https://avatars.githubusercontent.com/u/2443058?v=4" width="50" alt="jay-babu/mason-nvim-dap.nvim"/>
+        <img src="https://avatars.githubusercontent.com/u/2443058?v=4" width="50"/>
       </a>
     </td>
   </tr>
@@ -355,22 +356,22 @@ Huge thanks to these amazing developers for their awesome work:
   <tr>
     <td align="center">
       <a href="https://github.com/ellisonleao">
-        <img src="https://avatars.githubusercontent.com/u/544372?v=4" width="50" alt="ellisonleao"/>
+        <img src="https://avatars.githubusercontent.com/u/544372?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/rebelot">
-        <img src="https://avatars.githubusercontent.com/u/3069142?v=4" width="50" alt="rebelot"/>
+        <img src="https://avatars.githubusercontent.com/u/3069142?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/rose-pine">
-        <img src="https://avatars.githubusercontent.com/u/96490892?v=4" width="50" alt="rose-pine"/>
+        <img src="https://avatars.githubusercontent.com/u/96490892?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/EdenEast">
-        <img src="https://avatars.githubusercontent.com/u/22276940?v=4" width="50" alt="EdenEast"/>
+        <img src="https://avatars.githubusercontent.com/u/22276940?v=4" width="50"/>
       </a>
     </td>
   </tr>
@@ -378,15 +379,18 @@ Huge thanks to these amazing developers for their awesome work:
   <tr>
     <td align="center">
       <a href="https://github.com/nvimdev">
-        <img src="https://avatars.githubusercontent.com/u/130372558?v=4" width="50" alt="ellisonleao"/>
+        <img src="https://avatars.githubusercontent.com/u/130372558?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
 	  <a href="https://github.com/Mathiew82">
-        <img src="https://avatars.githubusercontent.com/u/22583657?v=4" width="50" alt="ellisonleao"/>
+        <img src="https://avatars.githubusercontent.com/u/22583657?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
+	  <a href="https://github.com/j-morano">
+        <img src="https://avatars.githubusercontent.com/u/48717183?v=4" width="50"/>
+      </a>
     </td>
     <td align="center">
     </td>

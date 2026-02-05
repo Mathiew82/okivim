@@ -80,6 +80,12 @@ These keymaps are available in buffers with LSP enabled.
 | `-` | Normal | Open parent directory |
 | `g.` | Normal | Toggle hidden files and directories |
 
+### Buffer Manager
+
+| Keymap | Mode | Description |
+|--------|------|-------------|
+| `<leader>bm` | Normal | Toggle quick menu |
+
 ### Mini Surround
 
 | Keymap | Mode | Description |
