@@ -167,6 +167,7 @@ debugpy (Python) - codelldb (Rust / C / C++) - js-debug-adapter (JS / TS) - php-
 ### Coloring and syntax
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) – *Syntax highlighting*
 - [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) – *Color preview*
+- [mini.indentscope](https://github.com/echasnovski/mini.indentscope) – *Indent scope*
 
 ### Search and navigation
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) – *Fuzzy finder*
@@ -320,7 +321,7 @@ Huge thanks to these amazing developers for their awesome work:
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/mxsdev/nvim-dap-vscode-js">
+      <a href="https://github.com/mxsdev">
         <img src="https://avatars.githubusercontent.com/u/26291168?v=4" width="50"/>
       </a>
     </td>
@@ -333,22 +334,22 @@ Huge thanks to these amazing developers for their awesome work:
 
   <tr>
     <td align="center">
-      <a href="https://github.com/rcarriga/nvim-dap-ui">
+      <a href="https://github.com/rcarriga">
         <img src="https://avatars.githubusercontent.com/u/1611543?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/theHamsta/nvim-dap-virtual-text">
+      <a href="https://github.com/theHamsta">
         <img src="https://avatars.githubusercontent.com/u/1641923?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/williamboman/mason.nvim">
+      <a href="https://github.com/williamboman">
         <img src="https://avatars.githubusercontent.com/u/103369?v=4" width="50"/>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/jay-babu/mason-nvim-dap.nvim">
+      <a href="https://github.com/jay-babu">
         <img src="https://avatars.githubusercontent.com/u/2443058?v=4" width="50"/>
       </a>
     </td>
