@@ -54,7 +54,7 @@
 
 ## Installation
 
-**[How to install](./docs/installation.md)** *([See dependencies](./docs/dependencies.md))*
+**[How to install](https://okivim.org/docs/installation)** *([See dependencies](https://okivim.org/docs/getting-started#dependencies))*
 
 ---
 
