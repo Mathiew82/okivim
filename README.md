@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/okivim/okivim/main/logo.png" width="320" alt="okivim">
+    <img src="https://okivim.org/img/logo-repo.png" width="320" alt="okivim">
 </div>
 
 <h4 align="center">
@@ -25,7 +25,7 @@
 
 **Okivim** is a minimal and efficient **Neovim configuration** focused on **simplicity, performance, and maintainability**. It provides a clean foundation with modern features like LSP, formatting, and diagnostics, while keeping the configuration transparent and easy to customize. Built to stay fast, predictable, and out of your way — giving you a setup that grows with your workflow.
 
-![](https://raw.githubusercontent.com/okivim/okivim/refs/heads/main/screenshots/screenshot1.png)
+![](https://okivim.org/img/screenshots/screenshot1.png)
 
 ## Features
 
@@ -253,9 +253,9 @@ debugpy (Python) - codelldb (Rust / C / C++) - js-debug-adapter (JS / TS) - php-
 
 ## Screenshots
 
-![screenshot2](https://raw.githubusercontent.com/okivim/okivim/refs/heads/main/screenshots/screenshot2.png)
-![screenshot3](https://raw.githubusercontent.com/okivim/okivim/refs/heads/main/screenshots/screenshot3.png)
-![screenshot4](https://raw.githubusercontent.com/okivim/okivim/refs/heads/main/screenshots/screenshot4.png)
+![screenshot2](https://okivim.org/img/screenshots/screenshot2.png)
+![screenshot3](https://okivim.org/img/screenshots/screenshot3.png)
+![screenshot4](https://okivim.org/img/screenshots/screenshot4.png)
 
 ---
 
