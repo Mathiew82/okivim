@@ -42,30 +42,30 @@ end, { desc = "Split terminal vertically" })
 -- ------------------------------
 -- Telescope Keymaps
 -- ------------------------------
-vim.keymap.set("n", "<leader><Space>", "<cmd>Telescope commands<CR>", { desc = "Command palette" })
-vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Find files" })
-vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Live grep (search text in project)" })
-vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Find buffers" })
-vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Help tags" })
-vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Recent Files" })
+vim.keymap.set("n", "<leader><Space>", "<cmd>Telescope commands<CR>", { desc = "Telescope: Command palette" })
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Telescope: Find files" })
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Telescope: Live grep" })
+vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Telescope: Find buffers" })
+vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Telescope: Help tags" })
+vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Telescope: Recent files" })
 
 -- ------------------------------
 -- Oil Keymaps
 -- ------------------------------
-vim.keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Oil: open parent directory" })
+vim.keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Oil: Open parent directory" })
 
 -- ------------------------------
 -- Fugitive Keymaps
 -- ------------------------------
-vim.keymap.set("n", "<leader>G", "<cmd>Git<cr>", { desc = "Fugitive: Open Git status" })
-vim.keymap.set("n", "<leader>Gb", "<cmd>Git blame<cr>", { desc = "Fugitive: Open Git blame" })
+vim.keymap.set("n", "<leader>G", "<cmd>Git<cr>", { desc = "Fugitive: Open git status" })
+vim.keymap.set("n", "<leader>Gb", "<cmd>Git blame<cr>", { desc = "Fugitive: Open git blame" })
 
 -- ------------------------------
 -- Diffview Keymaps
 -- ------------------------------
-vim.keymap.set("n", "<leader>do", "<cmd>DiffviewOpen<cr>", { desc = "Diffview: open" })
-vim.keymap.set("n", "<leader>dH", "<cmd>DiffviewFileHistory %<cr>", { desc = "Diffview: file history" })
-vim.keymap.set("n", "<leader>dc", "<cmd>DiffviewClose<cr>", { desc = "Diffview: close" })
+vim.keymap.set("n", "<leader>do", "<cmd>DiffviewOpen<cr>", { desc = "Diffview: Open" })
+vim.keymap.set("n", "<leader>dH", "<cmd>DiffviewFileHistory %<cr>", { desc = "Diffview: File history" })
+vim.keymap.set("n", "<leader>dc", "<cmd>DiffviewClose<cr>", { desc = "Diffview: Close" })
 
 -- ------------------------------
 -- Gitsigns Keymaps
@@ -83,4 +83,4 @@ vim.keymap.set("n", "<leader>gl", "<cmd>Gitsigns toggle_linehl<CR>", { desc = "G
 -- ------------------------------
 -- Aerial Keymaps
 -- ------------------------------
-vim.keymap.set("n", "<leader>o", "<cmd>AerialToggle!<cr>", { desc = "Toggle Aerial Outline" })
+vim.keymap.set("n", "<leader>o", "<cmd>AerialToggle!<cr>", { desc = "Aerial: Toggle outline" })
