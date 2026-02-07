@@ -48,6 +48,14 @@ vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Tele
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Telescope: Find buffers" })
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Telescope: Help tags" })
 vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Telescope: Recent files" })
+-- LSP pickers
+vim.keymap.set("n", "<leader>ld", "<cmd>Telescope lsp_definitions<CR>", { desc = "Telescope: LSP definitions" })
+vim.keymap.set("n", "<leader>lD", "<cmd>Telescope lsp_type_definitions<CR>", { desc = "Telescope: LSP type definitions" })
+vim.keymap.set("n", "<leader>li", "<cmd>Telescope lsp_implementations<CR>", { desc = "Telescope: LSP implementations" })
+vim.keymap.set("n", "<leader>lr", "<cmd>Telescope lsp_references<CR>", { desc = "Telescope: LSP references" })
+vim.keymap.set("n", "<leader>ls", "<cmd>Telescope lsp_document_symbols<CR>", { desc = "Telescope: LSP document symbols" })
+vim.keymap.set("n", "<leader>lS", "<cmd>Telescope lsp_workspace_symbols<CR>",
+  { desc = "Telescope: LSP workspace symbols" })
 
 -- ------------------------------
 -- Oil Keymaps
