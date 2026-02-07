@@ -8,32 +8,32 @@ return {
       {
         "<leader>xx",
         function() t().toggle("diagnostics") end,
-        desc = "Diagnostics (Trouble)",
+        desc = "Trouble: Diagnostics",
       },
       {
         "<leader>xX",
         function() t().toggle("diagnostics", { filter = { buf = 0 } }) end,
-        desc = "Buffer Diagnostics (Trouble)",
+        desc = "Trouble: Buffer Diagnostics",
       },
       {
         "<leader>cs",
         function() t().toggle("symbols", { focus = false }) end,
-        desc = "Symbols (Trouble)",
+        desc = "Trouble: Symbols",
       },
       {
         "<leader>cl",
         function() t().toggle("lsp", { focus = false, win = { position = "right" } }) end,
-        desc = "LSP (Trouble)",
+        desc = "Trouble: LSP",
       },
       {
         "<leader>xL",
         function() t().toggle("loclist") end,
-        desc = "Location List (Trouble)",
+        desc = "Trouble: Location List",
       },
       {
         "<leader>xQ",
         function() t().toggle("qflist") end,
-        desc = "Quickfix List (Trouble)",
+        desc = "Trouble: Quickfix List",
       },
     },
   },
