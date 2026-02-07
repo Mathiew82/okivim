@@ -87,8 +87,3 @@ vim.keymap.set("n", "<leader>gi", "<cmd>Gitsigns show_commit<CR>", { desc = "Git
 vim.keymap.set("n", "<leader>gd", "<cmd>Gitsigns diffthis<CR>", { desc = "Gitsigns: Diff against HEAD" })
 vim.keymap.set("n", "<leader>gn", "<cmd>Gitsigns toggle_numhl<CR>", { desc = "Gitsigns: Toggle number highlighting" })
 vim.keymap.set("n", "<leader>gl", "<cmd>Gitsigns toggle_linehl<CR>", { desc = "Gitsigns: Toggle line highlighting" })
-
--- ------------------------------
--- Aerial Keymaps
--- ------------------------------
-vim.keymap.set("n", "<leader>o", "<cmd>AerialToggle!<cr>", { desc = "Aerial: Toggle outline" })
