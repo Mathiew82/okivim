@@ -6,8 +6,6 @@ return {
     local parser_dir = vim.fn.stdpath("data") .. "/ts-parsers"
     local treesitter = require("nvim-treesitter")
 
-    vim.opt.rtp:prepend(parser_dir)
-
     treesitter.setup({
       install_dir = parser_dir,
     })
@@ -32,7 +30,7 @@ return {
       pattern = {
         "c", "cpp", "lua",
         "html", "css", "scss",
-        "javascript", "typescript", "tsx",
+        "javascript", "typescript", "javascriptreact", "typescriptreact",
         "markdown", "mdx",
         "vue", "yaml", "bash", "json", "toml", "php",
         "python", "rust",
